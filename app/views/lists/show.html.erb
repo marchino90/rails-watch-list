@@ -10,8 +10,6 @@
 <%= link_to "All Lists", lists_path(@lists)%>
 
 
-
-
 <% @list.bookmarks.each do|bookmark| %>
   <div>
     <h2><%= bookmark.movie.title %></h2>
@@ -23,4 +21,5 @@
       %>
   </div>
 <% end %>
+
 </div>

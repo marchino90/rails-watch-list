@@ -4,6 +4,7 @@
 <div class="container cards">
     <% @lists.each do |list| %>
       <div class="card-category">
+      <%= cl_image_tag list.photo.key, width: 400, height: 300, crop: :fill %>
         <%= link_to list.name, list_path(list) %>
         <%= link_to "Delete List",
         list_path(list),
